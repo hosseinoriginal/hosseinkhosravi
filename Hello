@@ -1,1 +1,69 @@
-<h2>سلام</h2>
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="WebTest_01.css" rel="stylesheet" />
+    <link rel="stylesheet" href="fonts/fontawesome-webfont.ttf">
+    <title>www.hosseinkhosravi.ir</title>
+</head>
+<body>
+    <Main class="main">
+
+        <h4 style="font-size: 22px" class="title">Please Enter Your Information </h4>
+
+        <div action="" class="form">
+            <input type="text" id="input_name" class="form_input" placeholder="نام">
+            <input type="text" id="input_family" class="form_input" placeholder="نام خانوادگی">
+            <button class="form_btn" id="form_btn"><i class="fa fa-registered" aria-hidden="true"></i> ثبت</button>
+            <button class="form_btn" id="form_save" style="display: none"> ذخیره</button>
+        </div>
+
+
+        <div class="tablediv">
+
+            <table>
+                <tr>
+                    <th> نام خانوادگی</th>
+                    <th>نام </th>
+                    <th>تنظیمات </th>
+                </tr>
+            </table>
+
+            <table id="myTable">
+            </table>
+
+        </div>
+
+    </Main>
+
+
+    <div id="myModal" class="modal">
+
+        <div class="modal-content">
+
+            <span class="close">&times;</span>
+
+            <div class="tablediv">
+
+                <table>
+                    <tr>
+                        <th> :نام خانوادگی</th>
+                        <th>:نام </th>
+                    </tr>
+                </table>
+
+                <table id="showTable">
+                </table>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="WebTest_01.js"></script>
+
+</body>
+</html>
